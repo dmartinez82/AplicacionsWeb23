@@ -16,51 +16,67 @@
 
     <main>
         <form action="index.html">
+
+            <fieldset>
+                <legend>Dades personals</legend>
+                <p>
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" required placeholder="El teu nom">
+                    <label for="llin1">Llin1:</label>
+                    <input type="text" id="llin1" name="llin1" required title="Rellena tu apellido">
+                </p>
+                <p>
+                    <label for="edat">Edat:</label>
+                    <input type="number" id="edat" name="edat" min="0" max="123" step="1">
+                    <label for="dataNaix">Fecha de nacimiento:</label>
+                    <input type="date" name="dataNaix" id="dataNaix" max="2023-10-20" value="2023-10-20">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required autocomplete="off">
+                    <label for="passwd">Contrasenya</label>
+                    <input type="password" name="passwd" id="passwd" required>
+                </p>
+                <p>
+                    <label for="genero">Género</label>
+                    <select name="genero" id="genero" required>
+                        <option value="">Selecciona</option>
+                        <option value="H">Home</option>
+                        <option value="D">Dona</option>
+                        <option value="A">Altres</option>
+                    </select>
+                </p>
+                <p>
+                    <span title="Rellena tu estado civil, si quieres">Estado Civil</span> 
+                    <br>
+                    <input type="radio" name="estadoCivil" id="soltero">
+                    <label for="soltero">Soltero</label>
+                    <br>
+                    <input type="radio" name="estadoCivil" id="casado">
+                    <label for="casado">Casado</label>
+                    <br>
+                    <input type="radio" name="estadoCivil" id="divorciado">
+                    <label for="divorciado">Divorciado</label>
+                    <br>
+                    <input type="radio" name="estadoCivil" id="nsnc">
+                    <label for="nsnc">NS/NC</label>
+                </p>
+            </fieldset>
+
+            
             <p>
-                <label for="nom">Nom:</label>
-                <input type="text" id="nom" name="nom" required>
-            </p>
-            <p>
-                <label for="llin1">Llin1:</label>
-                <input type="text" id="llin1" name="llin1" required >
-            </p>
-            <p>
-                <label for="edat">Edat:</label>
-                <input type="number" id="edat" name="edat" min="0" max="123" step="1">
-            </p>
-            <p>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required autocomplete="off">
-                <label for="passwd">Contrasenya</label>
-                <input type="password" name="passwd" id="passwd" required>
-            </p>
-            <p>
-                <label for="genero">Género</label>
-                <select name="genero" id="genero" required>
-                    <option value="">Selecciona</option>
-                    <option value="H">Home</option>
-                    <option value="D">Dona</option>
-                    <option value="A">Altres</option>
-                </select>
-            </p>
-            <p>
-                <span>Estado Civil</span> 
-                <br>
-                <input type="radio" name="estadoCivil" id="soltero">
-                <label for="soltero">Soltero</label>
-                <br>
-                <input type="radio" name="estadoCivil" id="casado">
-                <label for="casado">Casado</label>
-                <br>
-                <input type="radio" name="estadoCivil" id="divorciado">
-                <label for="divorciado">Divorciado</label>
-                <br>
-                <input type="radio" name="estadoCivil" id="nsnc">
-                <label for="nsnc">NS/NC</label>
+                <label for="color">Color</label>
+                <input type="color" name="color" id="color">
             </p>
             <p>
                 <input type="checkbox" name="terminos" id="terminos" required>
                 <label for="terminos">Acepto los <a href="https://www.goldcar.es/tc/" target="_blank">términos y condiciones</a> del contrato</label>
+            </p>
+
+            <p>
+                <label for="obsv">Observacions:</label>
+                <br>
+                <textarea name="obsv" id="obsv" cols="60" rows="5" ></textarea>
             </p>
             <p>
                 <input type="submit" value="Enviar">
