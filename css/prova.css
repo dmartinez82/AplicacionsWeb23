@@ -1,0 +1,19 @@
+h1 {
+    color: orange;
+}
+
+p {
+    color: #b42ab4;
+    font-size: xx-small;
+    color: red; /* si dues regles entren en conflicte, s'agafa la darrera */
+}
+
+#prueba{
+    font-size: xx-large;
+}
+
+.importante {
+    background-color: lightsalmon;
+    text-decoration: underline;
+    color: blue;
+}
