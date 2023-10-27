@@ -5,3 +5,29 @@ option[value="A"]{
 input[required]{
     background-color: lightgreen;
 }
+
+input[required]:hover{
+    background-color: darkviolet;
+}
+
+a:visited, a:link{
+    color: unset;
+    text-decoration: none;
+}
+
+label[for="terminos"] span{
+    color: blue;
+    text-decoration: underline;
+}
+
+label[for="casado"]:hover{
+    text-decoration: underline;
+}
+
+label[for="casado"]:hover::before{
+    content: "Pobrecito ";
+}
+
+p#radios label:nth-of-type(3){
+    color: brown;
+}
