@@ -1,0 +1,7 @@
+option[value="A"]{
+    color: rgb(55, 78, 179);
+}
+
+input[required]{
+    background-color: lightgreen;
+}

@@ -1,19 +1,27 @@
-h1 {
+header h1 {
     color: orange;
 }
 
 p {
     color: #b42ab4;
-    font-size: xx-small;
     color: red; /* si dues regles entren en conflicte, s'agafa la darrera */
 }
 
 #prueba{
     font-size: xx-large;
+    color: yellow;
 }
 
 .importante {
     background-color: lightsalmon;
     text-decoration: underline;
-    color: blue;
+    color: blueviolet;
+}
+
+h1{
+    background-color: aquamarine;
+}
+
+p.importante.pepito{
+    font-style: oblique;
 }
