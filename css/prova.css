@@ -1,3 +1,7 @@
+*{
+    border: 1px solid black;
+}
+
 header h1 {
     color: orange;
 }
@@ -10,6 +14,10 @@ p {
 #prueba{
     font-size: xx-large;
     color: yellow;
+    width: 40%;
+    text-align: center;
+    float: right;
+    padding: 15px;
 }
 
 .importante {
@@ -18,10 +26,27 @@ p {
     color: blueviolet;
 }
 
+h1.importante{
+    width: 40%;
+    padding: 15px;
+    margin: 30px auto;
+    text-align: center;
+    float: left;
+}
+
 h1{
     background-color: aquamarine;
 }
 
 p.importante.pepito{
     font-style: oblique;
+}
+
+main{
+    clear: both;
+}
+
+.centrado{
+    margin: 0 auto;
+    width: 50%;
 }
