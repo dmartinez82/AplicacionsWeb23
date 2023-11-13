@@ -53,11 +53,10 @@ a {
     background-size: cover;
     border-radius: 25px;
     width: 100%;
-    height: 50px;
     text-align: center;
     font-size: xx-large;
     color: white;
-    padding-top: 30px;
+    line-height: 300px;
 }
 
 li span{
