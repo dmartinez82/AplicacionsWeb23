@@ -1,44 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
 
-    <main class="">
-        <h1 class="text-warning shadow-sm bg-secondary text-center lh-6 py-3">
-            HOLA MUNDO
-        </h1>
+  <main class="">
+    <h1 class="text-warning shadow-sm bg-secondary text-center lh-6 py-3">
+      HOLA MUNDO
+    </h1>
 
-        <div id="carouselExampleControls" class="carousel slide w-50 m-auto" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./img/banner_index.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+    <div id="carouselExampleIndicators" class="carousel slide m-auto" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/img01.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/img02.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/img03.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!-- Button trigger modal -->
+    <div class="mt-4 d-flex justify-content-center">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#finestraModal">
+        Launch demo modal!
+      </button>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="finestraModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Términos y condiciones</h5>
           </div>
-        
-    </main>
-    
+          <div class="modal-body">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto perspiciatis maiores error quisquam
+            blanditiis? Corrupti recusandae incidunt magnam, a eum laudantium suscipit, repellendus repellat debitis
+            provident eaque, facilis dolore possimus.
+            Voluptatibus distinctio libero architecto nulla ipsum et similique explicabo obcaecati illum, enim est ipsa
+            magnam exercitationem maxime quas voluptate tenetur at quae consequuntur ut soluta perferendis accusantium
+            odit sapiente. Eaque.
+            Corporis sit quam, praesentium nisi tenetur cupiditate autem iure iste aperiam adipisci consectetur vel,
+            eligendi modi iusto qui impedit! Est minima quibusdam aperiam amet quia quis possimus optio nesciunt dolor.
+            Labore perferendis fuga quasi ducimus blanditiis error porro sit iusto nobis sequi reprehenderit aperiam
+            necessitatibus, accusantium rerum autem recusandae, non voluptate molestias eligendi ullam ipsam! Ipsa
+            accusamus quis sunt sit?
+            Dolor, atque? Laborum quo adipisci qui porro odio itaque placeat ipsam eligendi ipsa veritatis, suscipit
+            ullam fuga accusamus, blanditiis quae cum minima non mollitia. Nulla quis aspernatur fugit et atque?
+            Quam nemo placeat eos dolores, fuga perspiciatis quod deserunt esse dignissimos itaque dolor illo deleniti
+            voluptatem id mollitia tempora nihil aut ex ut. Facere libero fugit culpa mollitia eum molestiae.
+            Voluptas eius quisquam, nesciunt nam neque eum cumque fuga iste quidem fugit a repellendus pariatur
+            voluptatem praesentium minus, consequatur quaerat delectus sunt quibusdam! Magnam unde natus tempore
+            voluptatem, laudantium deserunt?
+            Atque corporis commodi necessitatibus tempore excepturi dolor sint aspernatur explicabo! Quae non assumenda
+            laboriosam optio ducimus modi facilis quasi, ipsum labore eius. Modi, dolore? Dignissimos iure aspernatur a
+            animi eum!
+            Dolorum dolorem tempora unde corporis? Alias, aut voluptatum dolor laboriosam ipsam fugit quae voluptate
+            dicta ab aliquam deserunt ullam quidem sunt! Illo perspiciatis, accusantium rem voluptatem eius expedita
+            doloribus ipsa?
+            Dignissimos consectetur ad et hic officia nisi odio, dolore magni perferendis, amet expedita ducimus
+            excepturi inventore perspiciatis provident deleniti quam reiciendis voluptatem. Rerum numquam debitis
+            officia dicta, aut nihil. Beatae!
+            Accusantium animi quas deserunt ut ad quo quasi quis delectus odio deleniti fugit, accusamus, similique
+            dolores obcaecati unde quae consequatur harum velit dolorum ullam inventore veniam rem ipsum! Veritatis,
+            quas.
+            Ratione facilis autem debitis. Odit dolorum maiores exercitationem velit, repellat quod dolores eum ad. Modi
+            quo id ut nam, pariatur ipsum accusamus ducimus, obcaecati amet dolorem quae assumenda laborum maiores!
+            Porro officiis maiores omnis accusamus natus qui, enim repellendus, sunt asperiores quasi provident
+            doloribus labore praesentium minima obcaecati aspernatur quibusdam aliquam, suscipit nemo commodi. Suscipit
+            voluptatem ratione distinctio necessitatibus facere?
+            Nobis neque mollitia qui reiciendis facere maiores doloremque, ducimus, consectetur dolor, iste magni sunt
+            consequatur odio! At distinctio, a assumenda, non voluptatem sapiente sunt beatae impedit ex quisquam magnam
+            quod.
+            Unde quia impedit animi eos a ipsa ad suscipit amet nisi repudiandae dolores libero, dolore iste veniam.
+            Provident incidunt est id! Ullam vitae ad ipsa ex fugit, doloribus dolor temporibus.
+            Vitae facere, tempore iusto tempora unde labore sed expedita quasi nisi at dolores, facilis ad quis nam
+            velit perspiciatis repudiandae omnis, modi reprehenderit minima. Cumque accusamus quisquam maiores
+            repudiandae nam!
+            Incidunt cum quisquam earum numquam! Voluptate quia excepturi laudantium, nesciunt ullam, recusandae
+            officiis aperiam culpa molestias voluptatum corporis quasi! Voluptatibus, a? Dolores voluptates soluta,
+            quisquam ex recusandae suscipit quam molestias!
+          </div>
+          <div class="modal-footer">
+            <button id="btnCancela" type="button" class="btn btn-secondary" data-bs-dismiss="modal">No acepto</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Acepto</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <div class="container-fluid">
+      <div class="row">
+        <p class="col-12 col-sm-6 col-lg-3 px-1 px-md-3 px-lg-5">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa quas ullam iure animi explicabo atque quod,
+          ipsum, natus optio obcaecati labore fugiat. Obcaecati porro quas in quis, optio tempora ratione.
+          Explicabo quis recusandae aliquam, deleniti, suscipit sit cupiditate, et officiis quo esse cumque a magnam
+          delectus! Corporis eveniet, porro blanditiis earum voluptatibus maxime culpa amet quidem. Porro facilis nisi
+          mollitia.
+          Quasi, ad omnis assumenda maiores iure ea nesciunt commodi ex? Voluptatem laboriosam ratione similique maiores
+          repellendus distinctio praesentium blanditiis laudantium impedit, nisi eius exercitationem beatae vitae,
+          numquam minima saepe consectetur.
+        </p>
+
+        <p class="col-12 col-sm-6 col-lg-9 px-1 px-md-3 px-lg-5">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa quas ullam iure animi explicabo atque quod,
+          ipsum, natus optio obcaecati labore fugiat. Obcaecati porro quas in quis, optio tempora ratione.
+          Explicabo quis recusandae aliquam, deleniti, suscipit sit cupiditate, et officiis quo esse cumque a magnam
+          delectus! Corporis eveniet, porro blanditiis earum voluptatibus maxime culpa amet quidem. Porro facilis nisi
+          mollitia.
+          Quasi, ad omnis assumenda maiores iure ea nesciunt commodi ex? Voluptatem laboriosam ratione similique maiores
+          repellendus distinctio praesentium blanditiis laudantium impedit, nisi eius exercitationem beatae vitae,
+          numquam minima saepe consectetur.
+        </p>
+      </div>
+    </div>
+
+
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
