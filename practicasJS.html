@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link id="estilos" rel="stylesheet" href="./css/modoDia.css">
 </head>
 <body>
 
     <h1>Mi primer formulario</h1>
+    <h2 id="saludo"></h2>
     <form action=".">
 
         <div>
@@ -19,6 +21,10 @@
         <div>
             <input type="password" id="contraseña">
             <input type="button" value="👁️" onclick="muestraPasswd()">
+        </div>
+
+        <div>
+            <input id="botonModo" type="button" value="🌙" onclick="modoNoche()">
         </div>
 
     </form>
