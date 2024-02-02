@@ -1,6 +1,6 @@
-function multiply(){
+function multiply(valor){
     var numero = document.getElementById("numero").value;
-    var resultado = numero * 36;
+    var resultado = numero * valor;
     document.getElementById("resultado").value = resultado;
 }
 
@@ -12,7 +12,6 @@ function muestraPasswd(){
     } else if (elemento.getAttribute("type") == "text"){
         elemento.setAttribute("type", "password");
     }
-
 }
 
 function modoNoche(){
@@ -49,4 +48,36 @@ function modoNoche(){
         saludo.textContent = "Bon dia!";
     }
 
+}
+
+function cambiaURL(){
+    window.location = "http://www.google.es"
+}
+
+
+function calculaOperacion(){
+    var num1 = document.getElementById("num1").value;
+    var operacion = document.getElementById("operacions").value;
+
+    var resultado;
+    if (operacion == "raiz"){
+        resultado = Math.sqrt(num1);
+        if (!Number.isInteger(resultado)){
+            resultado = resultado.toFixed(3);
+        }
+    } else{
+        resultado = "Selecciona una operación"
+    }
+
+    document.getElementById("resultadoOperaciones").textContent = resultado;
+}
+
+function canviColor(){
+    var h1 = document.querySelector("#titulo");
+
+    var red = Math.round(Math.random()*255);
+    var green = Math.round(Math.random()*255);
+    var blue = Math.round(Math.random()*255);
+
+    h1.style.color = `rgb(${red}, ${green}, ${blue})`;
 }

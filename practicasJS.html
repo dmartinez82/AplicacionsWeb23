@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link id="estilos" rel="stylesheet" href="./css/modoDia.css">
+
+    <style>
+        div{
+            margin: 10px 0;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>Mi primer formulario</h1>
-    <h2 id="saludo"></h2>
+    <h1 id="titulo">
+        Mi primer formulario 
+        <input type="button" value="🎨" onclick="canviColor()">
+    </h1>
+    <h2 id="saludo">Bon dia</h2>
     <form action=".">
 
         <div>
             <input type="number" id="numero">
-            <input type="button" value="x36" onclick="multiply()">
+            <input id="btn1" type="button" value="x2" onclick="multiply(2)">
+            <input type="button" value="x3" onclick="multiply(3)">
             <input type="number" id="resultado">
         </div>
 
@@ -27,8 +39,18 @@
             <input id="botonModo" type="button" value="🌙" onclick="modoNoche()">
         </div>
 
+        <div>
+            <input type="number" name="" id="num1" autocomplete="off">
+            <select name="" id="operacions" autocomplete="off" onchange="calculaOperacion()">
+                <option value="">Selecciona operación</option>
+                <option value="raiz">&Sqrt;</option>
+            </select>
+            Resultado: <span id="resultadoOperaciones"></span>
+        </div>
+
     </form>
-    
+
     <script src="./js/pruebas3.js"></script>
 </body>
+
 </html>
