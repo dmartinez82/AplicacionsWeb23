@@ -3,3 +3,8 @@ body{
     background-color: lightgoldenrodyellow;
     color: black;
 }
+
+table, table * {
+    border: 1px solid black;
+    border-collapse: collapse;
+}

@@ -1,3 +1,5 @@
+var elementos = [];
+
 function multiply(valor){
     var numero = document.getElementById("numero").value;
     var resultado = numero * valor;
@@ -80,4 +82,32 @@ function canviColor(){
     var blue = Math.round(Math.random()*255);
 
     h1.style.color = `rgb(${red}, ${green}, ${blue})`;
+}
+
+function afegirElement(){
+    var element = document.getElementById("element").value.trim();
+
+    if(!elementos.includes(element)){
+        elementos.push(element);
+    }
+
+    pintaLlista();
+}
+
+function pintaLlista(){
+    var divLlista = document.getElementById("divLlista");
+
+    var resultado = "<ol>"
+    for (const elemento of elementos) {
+        resultado += `<li>${elemento}</li>`;
+    }
+
+    resultado += "</ol>";
+
+    divLlista.innerHTML= resultado;
+}
+
+function esborrarArray(){
+    elementos.length = 0;
+    pintaLlista();
 }
